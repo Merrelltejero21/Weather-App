@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Weather App</title>
+</head>
+<body class="text-white bg-conic-30 from-indigo-300 via-gray-400 to-slate-900 to-90% md:bg-cover bg-center p-10 bg-repeat-space">
+<div class="card border w-[30%] mx-auto mt-[60px] rounded-2xl bg-slate/50 backdrop-blur-md shadow-2xl shadow-gray/20">
+    <div class="search-bar flex justify-center align-middle mt-8">
+        <input type="text" placeholder="Enter City Name" class="city-input w-[50%] h-[50px] rounded-3xl pl-8 bg-gray-100/10">
+        <button class="-ml-15 w-[30px]"> <i class='bx bx-search-alt-2 bg-transparent text-2xl'></i> </button>
+    </div>
+    <div class="weather-summary text-center">
+        <img src="Images/clear.svg" alt="" class="weather-icon mx-auto size-50">
+        <p class="temp text-7xl">27°C</p>
+        <p class="condition text-xl my-2">Clouds</p>
+        <p class="city my-5 text-5xl">Manila</p>
+        <p class="date text-2xl">Sun, 02 Mar</p>
+    </div>
+    <div class="flex text-center justify-evenly my-16">
+        <div class="">
+            <img src="Images/humidity.png" alt="">
+            <p class="mt-5 humidity">84%</p>
+            <p>Humidity</p>
+        </div>
+        <div class="">
+            <img src="Images/wind.png" alt="">
+            <p class="mt-2 speed">11.83km</p>
+            <p>Wind Speed</p>
+        </div>
+    </div>  
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
